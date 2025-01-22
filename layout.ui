@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>546</width>
-    <height>455</height>
+    <width>699</width>
+    <height>476</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,17 +18,44 @@
     <rect>
      <x>10</x>
      <y>10</y>
-     <width>494</width>
+     <width>631</width>
      <height>401</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout">
-    <item row="1" column="0">
-     <widget class="QLabel" name="label_2">
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_4">
       <property name="text">
-       <string>Początek najmu:</string>
+       <string>Rodzaj samochodu</string>
       </property>
      </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QComboBox" name="comboBox">
+      <item>
+       <property name="text">
+        <string>Miejski</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Kompakt</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Van</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Suv</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QDateEdit" name="dateEdit"/>
     </item>
     <item row="1" column="1">
      <widget class="QCalendarWidget" name="calendarWidget">
@@ -37,6 +64,13 @@
         <width>16777215</width>
         <height>200</height>
        </size>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Początek najmu:</string>
       </property>
      </widget>
     </item>
@@ -68,8 +102,34 @@ font-weight: bold;</string>
       </property>
      </widget>
     </item>
-    <item row="2" column="1">
-     <widget class="QDateEdit" name="dateEdit"/>
+    <item row="4" column="0" colspan="2">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">justyfy-content: center</string>
+        </property>
+        <property name="text">
+         <string>Zarezerwuj</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </item>
    </layout>
   </widget>
